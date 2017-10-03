@@ -1,0 +1,52 @@
+/* Variables */
+
+@helvetica-font: 'HelveticaNeueCyr', Arial, sans-serif;
+@nimbstb-font: 'NimbusSanTCon', Arial, sans-serif;
+
+
+/* colors */
+@main-color: #2d2d2d;
+@white-txt: #ffffff;
+@black-txt: #000000;
+@footer-txt: #fff;
+@footer-hover: #999999;
+
+
+/* forms */
+@form-txt: #464a4c;
+@form-placeholder: #acacac;
+@form-submit-bg: #50bc56;
+@textfield-border: #cdcdcd;
+
+
+/* backgrounds */
+@main-bg: #fff;
+@footer-bg: #454545;
+
+
+/* buttons */
+@btn-request-top-bg: #ffba00;
+@btn-request-bottom-bg: #ff9000;
+@btn-more-color: #4cb848;
+@btn-more-border: #a3e5a8;
+@btn-submit-bg: #50bc56;
+@btn-submit-bg-hover: #409244;
+
+
+/* mixins */
+.cf {
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.fs (@string1, @string2) {
+  font-size: @string1;
+  line-height: @string2;
+}

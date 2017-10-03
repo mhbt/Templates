@@ -1,0 +1,32 @@
+//---------------------------------------------------------
+// Fonts
+//---------------------------------------------------------
+
+@font-path: '../fonts';
+
+.font(@font, @type, @weight, @style){
+    @font-type-path: '@{font-path}/@{font}/@{font}';
+
+    @font-face {
+        font-family: '@{font}';
+        src: url('@{font-type-path}-@{type}.eot'); /* IE9 Compat Modes */
+        src: local('@{font} @{type}'),
+            local('@{font}-@{type}'),
+            url('@{font-type-path}-@{type}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('@{font-type-path}-@{type}.woff2') format('woff2'), /* Super Modern Browsers */
+            url('@{font-type-path}-@{type}.woff') format('woff'), /* Modern Browsers */
+            url('@{font-type-path}-@{type}.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('@{font-type-path}-@{type}.svg#@{font}-@{type}') format('svg'); /* Legacy iOS */
+        font-style: @style;
+        font-weight: @weight;
+    }
+}
+
+
+.font('HelveticaNeueCyr', 'Roman', 400, normal);
+.font('HelveticaNeueCyr', 'Black', 900, normal);
+.font('HelveticaNeueCyr', 'Italic', 500, italic);
+.font('HelveticaNeueCyr', 'Bold', bold, normal);
+.font('HelveticaNeueCyr', 'Light', 300, normal);
+
+.font('NimbusSanTCon', 'Bold', bold, normal);

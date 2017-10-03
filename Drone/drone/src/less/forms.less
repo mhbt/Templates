@@ -1,0 +1,22 @@
+/* FORMS STYLES */
+
+.form-textfield {
+  display: block;
+  width: 100%;
+  padding: 1.3rem 2.2rem;
+  font-family: @helvetica-font;
+  font-weight: 400;
+  .fs(2rem, 1.7rem);
+  color: @form-txt;
+  background: @main-bg;
+  border: 1px solid @textfield-border;
+  border-radius: 0.6rem;
+  outline: none;
+}
+
+.form-textfield::-webkit-input-placeholder {color: @form-placeholder; opacity: 1; transition: opacity 0.3s ease;}
+.form-textfield::-moz-placeholder          {color: @form-placeholder; opacity: 1; transition: opacity 0.3s ease;}
+.form-textfield:-ms-input-placeholder      {color: @form-placeholder; opacity: 1; transition: opacity 0.3s ease;}
+.form-textfield:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.form-textfield:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.form-textfield:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
