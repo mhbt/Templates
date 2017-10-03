@@ -1,0 +1,31 @@
+font-size-adjust:   specifies that font size should be chosen based on the height of lowercase letters rather than the height of capital letters
+text-size-adjust:   control over the text inflation algorithm used on some mobile devices. As this property is non-standard, it must be prefixed: -moz-text-size-adjust, -webkit-text-size-adjust, and -ms-text-size-adjust.
+vh,vw,vmin,vmax:    heights and width according to  viewports
+font-variant: small-caps
+
+user-select
+
+
+Improved kerning pairs & ligatures
+----------------------------------
+----------------------------------
+Kerning adjusts the space between individual letter forms, while tracking (letter-spacing) adjusts spacing uniformly over a range of characters. In a well-kerned font, the two-dimensional blank spaces between each pair of characters all have a visually similar area.
+
+ligature occurs where two or more graphemes or letters are joined as a single glyph. An example is the character æ as used in English, in which the letters a and e are joined. The common ampersand (&) developed from a ligature in which the handwritten Latin letters e and t (spelling et, from the Latin for "and") were combined.
+
+CSS  
+----
+text-rendering: auto;
+text-rendering: optimizeSpeed;
+text-rendering: optimizeLegibility;
+text-rendering: geometricPrecision;
+font-kerning:auto;
+
+
+CSS gradients are a special type of <image> made of a progressive transition between two or more colors. You can choose between two types of gradients: linear (created with the linear-gradient() function) and radial (created with radial-gradient()).
+
+
+	
+There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, it will instantly disappear and be replaced by something even more bizarre and inexplicable.
+
+There is another theory which states that this has already happened.
